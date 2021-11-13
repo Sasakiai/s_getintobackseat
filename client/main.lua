@@ -17,7 +17,7 @@ Citizen.CreateThread(function()
     Citizen.Wait(1)
     local ped = PlayerPedId()
     local ped_coords = GetEntityCoords(ped)
-    local veh = ESX.Game.GetClosestVehicle(ped_coords)
+    local veh = GetClosestVehicle(ped_coords)
     local veh_coords = GetEntityCoords(veh)
     local dist = GetDistanceBetweenCoords(ped_coords, veh_coords, true)
 
